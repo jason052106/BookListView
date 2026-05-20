@@ -137,6 +137,7 @@
             this.lstBorrow.Name = "lstBorrow";
             this.lstBorrow.Size = new System.Drawing.Size(194, 358);
             this.lstBorrow.TabIndex = 0;
+            this.lstBorrow.DoubleClick += new System.EventHandler(this.lstBorrow_DoubleClick);
             // 
             // frmBooks
             // 

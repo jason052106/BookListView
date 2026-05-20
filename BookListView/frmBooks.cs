@@ -80,5 +80,30 @@ namespace BookListView
                 }
             }
         }
+
+        private void lstBorrow_DoubleClick(object sender, EventArgs e)
+        {
+            // 防呆機制：確認 ListBox 中確實有被選取的項目 (SelectedIndex 不為 -1)
+            if (lstBorrow.SelectedIndex != -1)
+            {
+                // 取得目前選取的書名
+                string selectedBook = lstBorrow.SelectedItem.ToString();
+
+                // 跳出訊息方塊進行再次確認
+                DialogResult dr = MessageBox.Show($"確定要歸還「{selectedBook}」嗎？",
+                                                  "還書確認",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+
+                // 如果使用者點選「是」
+                if (dr == DialogResult.Yes)
+                {
+                    // 將該項目從借書清單中移除
+                    lstBorrow.Items.RemoveAt(lstBorrow.SelectedIndex);
+
+                    // 也可以寫成：lstBorrow.Items.Remove(selectedBook);
+                }
+            }
+        }
     }
 }
