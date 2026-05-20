@@ -46,3 +46,6 @@
 string[] b_name = { "三國演義", "西遊記", "唐詩三百首", "楚辭", "西廂記", "水滸傳", "紅樓夢", "牡丹亭" }; // 書名
 string[] author = { "羅貫中", "吳承恩", "孫洙", "劉向", "王實甫", "施耐庵", "曹雪芹", "湯顯祖" };     // 作者
 string[] kind   = { "章回小說", "章回小說", "詩選", "詩歌", "戲曲", "章回小說", "章回小說", "戲曲" }; // 類別
+
+<img width="804" height="478" alt="image" src="https://github.com/user-attachments/assets/13780964-acde-4fb1-b7ec-c2430fabc414" />
+
